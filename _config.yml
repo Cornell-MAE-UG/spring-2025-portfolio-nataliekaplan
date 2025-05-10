@@ -13,8 +13,8 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : Natalie Kaplan
 description              : Natalie Kaplan - Projects and CV 
-baseurl                  : "portfolio-nataliekaplan" # Set this to "portfolio-<your-github-username>" 
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/spring-2025-portfolio-nataliekaplan" # Set this to "portfolio-<your-github-username>" 
+url                      : "https://cornell-mae-ug.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 
 # Theme and Style
 theme: jekyll-theme-minimal
