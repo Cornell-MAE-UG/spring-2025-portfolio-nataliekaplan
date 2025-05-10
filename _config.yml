@@ -18,7 +18,7 @@ url                      : "https://cornell-mae-ug.github.io" # the base hostnam
 
 # Theme and Style
 theme: jekyll-theme-minimal
-color_scheme: default # light/default, dark, or aqua
+color_scheme: green # light/default, dark, aqua, desert, or green
 
 sass:
   style: compressed

@@ -1,6 +1,6 @@
 // Default to light theme
-$primary-color: #3a3f58;
-$background-color: #f7f8fa;
+$primary-color: #3a583a;
+$background-color: #f7faf7;
 $text-color: #333;
 
 // Set theme colors based on the color_scheme variable
@@ -16,6 +16,10 @@ $text-color: #333;
   $primary-color: #925959;
   $background-color: #f6f1e0;
   $text-color: #1e0101;
+}@else if $color_scheme == 'green' {
+  $primary-color: #5d9259;
+  $background-color: #dcfadb;
+  $text-color: #021e01;
 }
 
 
