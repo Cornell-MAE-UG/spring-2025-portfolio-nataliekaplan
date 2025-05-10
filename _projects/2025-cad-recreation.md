@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Foosbot Recreation in CAD
+title: Foosbot CAD Recreation
 description: Class project with CAD
 technologies: [Autodesk Fusion 360]
 image: /assets/images/foosbot-cad.jpg

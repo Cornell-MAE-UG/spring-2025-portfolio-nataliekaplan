@@ -24,12 +24,12 @@ Aspiring engineering student with a strong foundation in prototyping, dynamics, 
 
 - **Syosset High School**  
   *High School Diploma*  
-  GPA: 100/100 | Graduation: [June, 2023]
+  GPA: 100/100 | Graduation: June, 2023
 
 ---
 
 #### Skills
-- **Software:** Autodesk Fusion 360, SolidWorks, ANSYS  
+- **Software:** Autodesk Fusion 360, SolidWorks 
 - **Programming:** MATLAB, Python, Java, C++, HTML, CSS, Javascript
 - **Tools:** 3D Printing, Lathe, Mill, Drill Press, Band Saw, Sander
 
@@ -64,11 +64,11 @@ Aspiring engineering student with a strong foundation in prototyping, dynamics, 
 ---
 
 #### Extracurricular Activities
-- Mechanical Lead | Cornell Nexus Project Team
-- Head of New Member Education | Cornell Cybersecurity Club
-- Full Stack Software Engineer | The Wardrobe
+- Mechanical Lead - Cornell Nexus Project Team
+- Head of New Member Education - Cornell Cybersecurity Club
+- Full Stack Software Engineer - The Wardrobe
 - Physics Undergraduate Teaching Assistant
-- Electrical Subteam Member | Cornell Autobike
+- Electrical Subteam Member - Cornell Autobike
 
 ---
 
