@@ -6,7 +6,7 @@ technologies: [SolidWorks, 3D Printing]
 image: /assets/images/intake-modular-cad.png
 ---
 
-Work on an intake system was initiated in Fall 2024. Rose Basch, Cleo Hamilton, Derek Yang, and I are currently working on this project. Work on this project began with brainstorming multiple ideas for individual components and integrated systems. Prototyping progress for an Archimedes screw based system has proved promising. 
+Work on an intake system for the Cornell Nexus Project Team robot was initiated in Fall 2024. Rose Basch, Cleo Hamilton, Derek Yang, and I are currently working on this project. Work on this project began with brainstorming multiple ideas for individual components and integrated systems. Prototyping progress for an Archimedes screw based system has proved promising. The next steps for this project are to design a front scooper to scoop sand into the screw and integrate the design into the robot. 
 
 **Current set of design requirements (active list):**
 - Align the shaking with the cylinder rotation rate

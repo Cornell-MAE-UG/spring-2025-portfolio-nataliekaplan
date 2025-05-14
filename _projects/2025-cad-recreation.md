@@ -7,7 +7,7 @@ image: /assets/images/foosbot-cad.jpg
 ---
 
 
-As part of a class project, I recreated an object in CAD using Autodesk Fusion 360. I chose to recreate the Foosbot, a children's toy pictured below. The Foosbot is a handheld foosball player that spins like a real foosball player when the arms are pushed in. 
+As part of a class project, I recreated an object in CAD using Autodesk Fusion 360. I chose to recreate the Foosbot, a handheld foosball player that spins like a real foosball player when the arms are pushed in. The Foosbot I modeled is shown below. 
 
 ![Photo of Foosbot]({{ "/assets/images/foosbot-photo.jpg" | relative_url }})
 
