@@ -31,4 +31,4 @@ The rod is made up of incrementally larger cardboard cylinders that collapse int
 
 This scrappy prototype made us realize that the umbrella ribs would be the most difficult part of the project. The ribs made of dowels did not collapse, so we had to figure out a way to make them open and close. 
 
-This page is a work in progress. Check back for more information. 
+This page is a work in progress. Check back later for more information. 

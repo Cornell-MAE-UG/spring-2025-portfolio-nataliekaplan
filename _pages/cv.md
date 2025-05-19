@@ -43,7 +43,7 @@ Aspiring engineering student with a strong foundation in prototyping, dynamics, 
   - Tested effectiveness at different angles and heights
 
 - **Battery Supports**:  
-  *Secured the battery to the robot.*  
+  *Secured the battery on the Cornell Nexus Project Team robot.*  
   - Under a tight deadline and with limited materials, came up with an effective design to secure the battery 
   - Used L brackets and bent sheet metal to prevent the battery from moving or tipping
 
