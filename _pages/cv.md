@@ -8,19 +8,19 @@ permalink: /cv/
 [Download my CV]({{ "/assets/resume.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [njk82@cornell.edu](mailto:njk82@cornell.edu) | | | **Phone:** +1516 404 0117
+**Email:** [njk82@cornell.edu](mailto:njk82@cornell.edu) | | | **Phone:** +1 516 404 0117  | | | **LinkedIn:** [My Profile](https://www.linkedin.com/in/natalie-kaplan-294a65247/)
 
 ---
 
 #### Objective
-Aspiring engineering student with a strong foundation in prototyping, dynamics, and CAD. Passionate about robotics and eager to apply my knowledge in real-world applications.
+Mechanical engineering student with a strong foundation in prototyping, dynamics, and CAD. Passionate about robotics and eager to apply my knowledge in real-world applications.
 
 ---
 
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: May, 2027
+  GPA: 3.9/4.0 | Graduation: May, 2027
 
 - **Syosset High School**  
   *High School Diploma*  
@@ -41,6 +41,22 @@ Aspiring engineering student with a strong foundation in prototyping, dynamics, 
   - Came up with the idea to model the system after an Archimedes screw 
   - Designed a modular screw conveyor in SolidWorks
   - Tested effectiveness at different angles and heights
+
+- **Keychain Umbrella**:  
+  *Prototype of the Keychain Umbrella: a smaller, lighter, more durable version of an umbrella with a keychain so it can be hung on your bag.*  
+  - Worked on a team of 6 to build a project to solve a problem
+  - Interviewed people with different lifestyles to gather information about what problem to solve
+  - Brainstormed ideas to help people travel in bad weather, coming up with 15 ideas and sketching each one
+  - Ranked the ideas based on plausibility, cost, and effectiveness to decide on the Keychain Umbrella
+  - Built a scrappy prototype out of cardboard and plastic bags to gauge what materials, manufacturing processes, and assembly methods we should use
+  - Ordered appropriate materials and assembled an initial prototype using a hand saw, drill, and other tools
+  - Evaluated the prototype based on previously defined metrics and designed and built an improved prototype
+
+- **Foosbot CAD Recreation**:  
+  *Recreated a Foosbot (a children's toy) using Fusion 360*  
+  - Measured principal dimensions and sketched the Foosbot with dimensions
+  - Disassembled the Foosbot and modeled each piece
+  - Made an assembly with the pieces and rendered it with correct materials
 
 - **Battery Supports**:  
   *Secured the battery on the Cornell Nexus Project Team robot.*  
