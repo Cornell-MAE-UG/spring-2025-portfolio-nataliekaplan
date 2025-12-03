@@ -20,6 +20,7 @@ Mechanical engineering student with a strong foundation in prototyping, dynamics
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
+  Minor in Robotics
   GPA: 3.9/4.0 | Graduation: May, 2027
 
 - **Syosset High School**  
@@ -29,7 +30,7 @@ Mechanical engineering student with a strong foundation in prototyping, dynamics
 ---
 
 #### Skills
-- **Software:** Autodesk Fusion 360, SolidWorks 
+- **Software:** Autodesk Fusion, SolidWorks, Ansys Mechanical, Simulink
 - **Programming:** MATLAB, Python, Java, C++, HTML, CSS, Javascript
 - **Tools:** 3D Printing, Lathe, Mill, Drill Press, Band Saw, Sander
 
@@ -67,10 +68,10 @@ Mechanical engineering student with a strong foundation in prototyping, dynamics
 
 #### Work Experience
 - **Cornell University - Peer Advisor**  
-  [August, 2024] - [November, 2024]  
-  - Guided a class of 20 first year engineering students through their transition to Cornell
-  - Co-planned the first-year Engineering Seminar with another peer advisor and a faculty instructor to strategically organize and facilitate the logistics of the 10-week curriculum
-  - Mentored, built connections with, and provided insight in solidarity with first-year students as they transitioned to the college and the Cornell community
+  [August, 2024] - Present  
+  - Guiding a class of 20 first year engineering students through their transition to Cornell
+  - Co-planning the first-year Engineering Seminar with another peer advisor and a faculty instructor to strategically organize and facilitate the logistics of the 10-week curriculum
+  - Mentoring, building connections with, and providing insight in solidarity with first-year students as they transition to the college and the Cornell community
 
 - **theCoderSchool - Code Coach**  
   [May, 2024] - [August, 2024]  
@@ -81,6 +82,7 @@ Mechanical engineering student with a strong foundation in prototyping, dynamics
 
 #### Extracurricular Activities
 - Mechanical Lead - Cornell Nexus Project Team
+- Undergraduate Researcher - Cornell HAPPI Lab
 - Head of New Member Education - Cornell Cybersecurity Club
 - Full Stack Software Engineer - The Wardrobe
 - Physics Undergraduate Teaching Assistant
