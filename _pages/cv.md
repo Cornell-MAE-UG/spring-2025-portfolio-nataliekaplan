@@ -19,9 +19,8 @@ Mechanical engineering student with a strong foundation in prototyping, dynamics
 
 #### Education
 - **Cornell University**  
-  *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  Minor in Robotics
-  GPA: 3.9/4.0 | Graduation: May, 2027
+  *Bachelor of Science in Mechanical and Aerospace Engineering | Minor in Robotics*  
+  GPA: 3.9/4.0 | Graduation: May, 2027 
 
 - **Syosset High School**  
   *High School Diploma*  
