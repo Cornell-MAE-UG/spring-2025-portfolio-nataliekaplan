@@ -3,7 +3,7 @@ layout: project
 title: Camera
 description: Designed a camera to send training data to robotic arms
 technologies: [Arduino, Fusion]
-image: /assets/images/camera-HAPPI.jpeg
+image: /assets/images/camera-HAPPI.jpg
 ---
 
 **Overview**
