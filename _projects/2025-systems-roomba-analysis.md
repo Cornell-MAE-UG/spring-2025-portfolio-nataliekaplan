@@ -16,7 +16,7 @@ My contribution to this project focused on the KF and EKF. I studied the Kalman 
 
 In order to clean a house, a Roomba must maintain an idea of where it is. To do this, it uses its control inputs combined with sensor measurements and a dynamics model. However, there are many possible sources of error, including but not limited to wheel slippage, sensor noise, mechanical imperfections, and dynamic obstacles. With sources of error in the sensor, dynamics, and control, how does the Roomba know which to trust, particularly when they disagree? 
 
-This introduces the localization problem. Given an initial guess of the robot’s pose (position and orientation in the global coordinate frame) $bel(x_t)$, a model of robot dynamics $p(x_t | x_{t-1}, u_t)$, a measurement function $p(z_t | x_t, m)$, control inputs $u_{1…t}$, and measurements $z_{1…t}$ (where x=position, z=sensor measurements, m=map, u=control inputs), we must find the belief of the current pose $bel(x_t)$. Since there is so much uncertainty, the robot’s pose is modeled as a probability instead of just one value. By using the control inputs, sensor measurements, and dynamics model together, we can reduce the uncertainty in the Roomba’s pose to much lower than it would have been if we had only used one source of data. [1]
+This introduces the localization problem. Given an initial guess of the robot’s pose (position and orientation in the global coordinate frame) \(bel(x_t)\), a model of robot dynamics \(p(x_t \mid x_{t-1}, u_t)\), a measurement function \(p(z_t \mid x_t, m)\), control inputs \(u_{1\ldots t}\), and measurements \(z_{1\ldots t}\) (where \(x\) = position, \(z\) = sensor measurements, \(m\) = map, \(u\) = control inputs), we must find the belief of the current pose \(bel(x_t)\). Since there is so much uncertainty, the robot’s pose is modeled as a probability instead of just one value. By using the control inputs, sensor measurements, and dynamics model together, we can reduce the uncertainty in the Roomba’s pose to much lower than it would have been if we had only used one source of data. [1]
 
 Since iRobot does not publicly disclose which localization filter the Roomba uses, I will model it using the Extended Kalman filter. However, in order to study the Extended Kalman filter, we must first know how the Kalman filter works. 
 
@@ -51,36 +51,48 @@ x \\ y \\ \theta
 \end{bmatrix}
 $$
 
-As mentioned above, the Kalman filter works under the assumption that the dynamics model is linear. The equation is shown below: 
-$$
-x_t = A x_{t-1} + B u_t + \epsilon_t
-$$
-[1] where A is an nxn matrix and describes how the state evolves from t-1 to t without controls or noise, B is an nxm matrix and describes how the control ut changes the state from t-1 to t, and $\epsilon_t \sim \mathcal{N}(0, R)$ is the process noise and is represented as a random variable. The process noise is assumed to be independent and normally distributed with covariance R [5]. For more details about the dynamics model, see the Heading Angle Control section of this report. 
+As mentioned above, the Kalman filter works under the assumption that the dynamics model is linear. The equation is shown below:
 
-The Kalman filter also assumes that the measurement model is linear. The equation is shown below: 
-$$
-z_t = C x_t + \delta
-$$
-[1] where C is a kxn matrix that describes how to map the state xt to an observation zt and $\delta \sim \mathcal{N}(0, Q)$ is the measurement noise and is represented as a random variable. The measurement noise is assumed to be independent and normally distributed with covariance Q [5]. 
+\[
+x_t = A x_{t-1} + B u_t + \varepsilon_t
+\]
 
-The Kalman filter cycles between prediction and correction steps to continuously update the robot’s pose. The prediction step, or the dynamics update, updates the pose using the dynamics model. This step uses two equations: one to find the mean $\bar{\eta}_t$, and one to find the standard deviation $\bar{\Sigma}_t$ of the Gaussian describing the pose. The bars represent the prediction step [1]. The equations are shown below: 
-$$
+[1] where \(A\) is an \(n \times n\) matrix and describes how the state evolves from \(t-1\) to \(t\) without controls or noise, \(B\) is an \(n \times m\) matrix and describes how the control \(u_t\) changes the state from \(t-1\) to \(t\), and \(\varepsilon_t \sim \mathcal{N}(0, R)\) is the process noise and is represented as a random variable. The process noise is assumed to be independent and normally distributed with covariance \(R\) [5]. For more details about the dynamics model, see the Heading Angle Control section of this report.
+
+The Kalman filter also assumes that the measurement model is linear. The equation is shown below:
+
+\[
+z_t = C x_t + \delta_t
+\]
+
+[1] where \(C\) is a \(k \times n\) matrix that describes how to map the state \(x_t\) to an observation \(z_t\), and \(\delta_t \sim \mathcal{N}(0, Q)\) is the measurement noise and is represented as a random variable. The measurement noise is assumed to be independent and normally distributed with covariance \(Q\) [5].
+
+The Kalman filter cycles between prediction and correction steps to continuously update the robot’s pose. The prediction step, or the dynamics update, updates the pose using the dynamics model. This step uses two equations: one to find the mean \(\bar{\eta}_t\), and one to find the standard deviation \(\bar{\Sigma}_t\) of the Gaussian describing the pose. The bars represent the prediction step [1]. The equations are shown below:
+
+\[
 \bar{\eta}_t = A \eta_{t-1} + B u_t
-$$
-$$
+\]
+
+\[
 \bar{\Sigma}_t = A \Sigma_{t-1} A^T + R
-$$
-The correction step, or measurement update, uses the measurements from the sensors to adjust our prediction of the pose of the robot. The equations to find the mean and standard deviation are shown below: 
-$$
+\]
+
+The correction step, or measurement update, uses the measurements from the sensors to adjust our prediction of the pose of the robot. The equations to find the mean and standard deviation are shown below:
+
+\[
 \eta_t = \bar{\eta}_t + K_t \left(z_t - C \bar{\eta}_t\right)
-$$
-$$
+\]
+
+\[
 \Sigma_t = (I - K_t C)\bar{\Sigma}_t
-$$
-The term $\left(z_t - C \bar{\eta}_t\right)$ is the discrepancy between the actual and predicted measurements and its weight is controlled by the Kalman gain $K_t$, which describes how much to trust the sensor measurements. As mentioned above, neither the dynamics model nor the measurement model is free of error, so the Kalman gain is used to balance them. If the sensor is very noisy, $K_t$ will be close to 0 [1]. The equation is shown below: 
-$$
+\]
+
+The term \(\left(z_t - C \bar{\eta}_t\right)\) is the discrepancy between the actual and predicted measurements and its weight is controlled by the Kalman gain \(K_t\), which describes how much to trust the sensor measurements. As mentioned above, neither the dynamics model nor the measurement model is free of error, so the Kalman gain is used to balance them. If the sensor is very noisy, \(K_t\) will be close to 0 [1]. The equation is shown below:
+
+\[
 K_t = \bar{\Sigma}_t C^T \left(C \bar{\Sigma}_t C^T + Q\right)^{-1}
-$$
+\]
+
 A block diagram of the closed loop system for calculating the mean position is shown in Figure 1. This diagram illustrates the loop between the prediction and correction stages of the filter.
 
 <p align="center">
