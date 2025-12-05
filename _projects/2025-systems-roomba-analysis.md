@@ -83,13 +83,20 @@ K_t = \bar{\Sigma}_t C^T \left(C \bar{\Sigma}_t C^T + Q\right)^{-1}
 $$
 A block diagram of the closed loop system for calculating the mean position is shown in Figure 1. This diagram illustrates the loop between the prediction and correction stages of the filter.
 
-![Block Diagram of Kalman Filter]({{ "/assets/images/KF_block_diagram.png" | relative_url }})
-*Figure 1. Block diagram of the Kalman filter showing the prediction and correction loop.*
+<p align="center">
+  <img src="{{ '/assets/images/KF_block_diagram.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 1: Block diagram of the Kalman filter showing the prediction and correction loop.</em>
+</p>
 
 We cannot use the Kalman filter on this system since its dynamics model is not linear. However, we can use the Extended Kalman filter, which relaxes the linearity assumption of the Kalman filter by using Jacobians to linearize the dynamics model locally at each time step. Although we are moving from an exact solution to an approximation, the relaxation of this assumption makes the EKF applicable to many more systems, including this one. 
 
-![EKF Plot]({{ "/assets/images/EKF_plot.png" | relative_url }})
-*Figure 2. True trajectory vs. EKF estimate of robot pose.*
+<p align="center">
+  <img src="{{ '/assets/images/EKF_plot.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 2. True trajectory vs. EKF estimate of robot pose.
+  </em>
+</p>
 
 The plot in Figure 2 shows the true trajectory compared to the EKF estimate of the pose of a differential drive robot driving with a forward velocity of 0.5 m/s and an angular velocity of 0.1 m/s using a noisy GPS-like sensor model. The plot shows that the EKF does a very good job of estimating the pose of the robot. The filter quickly hones in on the true pose and stays very accurate. The small errors are due to the linearization of a circular path. In reality, at every time step there may be a different control input and GPS cannot be used indoors. 
 
