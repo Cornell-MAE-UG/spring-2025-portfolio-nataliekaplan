@@ -3,7 +3,7 @@ layout: project
 title: Roomba Systems Analysis
 description: Analysis of the system dynamics of a Roomba for System Dynamics class
 technologies: [MATLAB]
-image: /assets/images/roomba.jpeg
+image: /assets/images/roomba.jpg
 ---
 
 **Overview**
