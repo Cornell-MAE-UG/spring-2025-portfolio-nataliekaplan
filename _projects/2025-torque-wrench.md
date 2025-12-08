@@ -167,21 +167,19 @@ I applied the clamped boundary condition to the drive and the load to the end of
 **FEM: Contour Plot of Maximum Principal Stress**
 
 <p align="center">
-  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_stress.png' | relative_url }}" width="550">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_principal_stress.png' | relative_url }}" width="550">
   <br>
-  <em>Figure 12: Maximum principal stress occurs at a stress concentration on the boundary between the handle and the fillet on the drive. </em>
+  <em>Figure 12: Maximum principal stress contour plot. </em>
 </p>
-
-The maximum principal stress is 35330 psi.
 
 **FEM: Summary of Results**
 
-The maximum normal stress is <FILL IN>. 
+The maximum normal stress is 35330 psi. 
 
 <p align="center">
-  <img src="{{ '/assets/images/placeholder.png' | relative_url }}" width="550">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_stress.png' | relative_url }}" width="550">
   <br>
-  <em>Figure 13: Maximum normal stress occurs on the side of the handle farthest from the neutral axis. </em>
+  <em>Figure 13: Maximum normal stress occurs at a stress concentration on the boundary between the handle and the fillet on the drive. </em>
 </p>
 
 The load point deflection is 0.29225 in. 
@@ -206,7 +204,7 @@ The strain at the strain gauge is $8.2771^{-004}\space in/in$.
 **Torque Wrench Sensitivity**
 
 As seen in the section above, in FEM the strain gauge reads 
-$8.2771^{-004}\space in/in$, or  $827.71\space \mu\epsilon$. Using this strain with a full bridge gauge, the torque wrench sensitivity is $1.655 mV/V$. 
+$8.2771^{-004}\space in/in$, or  $827.71\space \mu\epsilon$. Using this strain with a full bridge gauge, the torque wrench sensitivity is $1.655 mV/V$, which is greater than 1 mV/V and therefore meets the design requirement. 
 
 **Selected Strain Gauge**
 
