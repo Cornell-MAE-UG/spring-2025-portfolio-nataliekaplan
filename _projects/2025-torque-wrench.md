@@ -91,7 +91,7 @@ The results for the chosen material and dimensions are shown below.
 <p align="center">
   <img src="{{ '/assets/images/TR_MATLAB_results.png' | relative_url }}" width="550">
   <br>
-  <em>Figure 2: CAD model for the torque wrench. </em>
+  <em>Figure 2: Results from the hand calculations for Titanium Alpha-Beta alloy with the chosen dimensions. </em>
 </p>
 
 **CAD Model**
