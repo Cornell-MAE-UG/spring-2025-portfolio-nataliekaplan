@@ -96,23 +96,123 @@ I used Fusion to create a CAD model of the torque wrench. The model is shown bel
   <em>Figure 2: CAD model for the torque wrench. </em>
 </p>
 
+As seen in the model, I added a fillet to the base of the drive to mitigate the stress concentration. 
+
+Parameters used in the CAD model are shown below: 
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_params.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 3: List of document parameters. </em>
+</p>
+
 Key dimensions of the CAD model are shown below: 
 
+<p align="center">
+  <img src="{{ '/assets/images/TR_length_plus_1.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 4: Length L. Length from the far end to the center of the drive is 16 inches. One more inch is added for stability. </em>
+</p>
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_b.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 5: Thickness b.  </em>
+</p>
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_h.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 6: Width h. </em>
+</p>
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_b.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 7: Width b.  </em>
+</p>
+
+Key dimensions of the drive are shown below: 
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_drive_height.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 8: Height of the drive. </em>
+</p>
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_drive_side_length.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 9: Side length of the drive. </em>
+</p>
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_drive_top_height.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 10: Height of the top of the drive. </em>
+</p>
+
+**FEM: Load and Boundary Conditions**
+
+I applied the clamped boundary condition to the drive and the load to the end of the handle as shown in the image below. 
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_loads_and_BCs.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 11: Loads and boundary conditions. </em>
+</p>
+
+**FEM: Contour Plot of Maximum Principal Stress**
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_stress.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 12: Maximum principal stress occurs at a stress concentration on the boundary between the handle and the fillet on the drive. </em>
+</p>
+
+The maximum principal stress is 35330 psi.
+
+**FEM: Summary of Results**
+
+The maximum normal stress is <FILL IN>. 
+
+<p align="center">
+  <img src="{{ '/assets/images/placeholder.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 13: Maximum normal stress occurs on the side of the handle farthest from the neutral axis. </em>
+</p>
+
+The load point deflection is 0.29225 in. 
+
+<p align="center">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_defl_with_wireframe.png' | relative_url }}" width="550">
+  <br>
+  <em>Figure 14: Load point deflection. Image shows deformation compared to the original state. </em>
+</p>
+
+The strains at each of the strain gauge locations is 
+$8.2771^{-004}\space in/in$ on the side in tension and $-8.2774^{-004}\space in/in$ on the side in compression.
 
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <img src="{{ '/assets/images/TR_b.png' | relative_url }}" width="300">
-  <img src="{{ '/assets/images/TR_h.png' | relative_url }}" width="300">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_strain_probe.png' | relative_url }}" width="350">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_strain_probe_results.png' | relative_url }}" width="100">
 </div>
 
 <p align="center">
-  <em>Figure 3: Width and thickness. </em>
+  <em>Figure 15: Strain gauge results from the side in tension. </em>
 </p>
 
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <img src="{{ '/assets/images/TR_length_plus_1.png' | relative_url }}" width="350">
-  <img src="{{ '/assets/images/TR_params.png' | relative_url }}" width="200">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_strain_probe_compression.png' | relative_url }}" width="350">
+  <img src="{{ '/assets/images/TR_ANSYS/ANSYS_strain_probe_results_compression.png' | relative_url }}" width="100">
 </div>
 
 <p align="center">
-  <em>Figure 4: Length and document parameters. Length from far end to the center of the drive is 16 inches. One more inch is added on the end for stability. </em>
+  <em>Figure 16: Strain gauge results from the side in compression. </em>
 </p>
+
+**Torque Wrench Sensitivity**
+
+**Selected Strain Gauge**
+
+I chose to use the [SGT-4/1000-FB11 strain gauge from DigiKey](https://www.digikey.com/en/products/detail/omega/SGT-4-1000-FB11/25637862). This is a full wheatstone bridge strain gauge. The dimensions are 0.58 inches by 0.44 inches. This strain gauge will be mounted with the 0.58 inch side parallel to the 16 inch length of the handle. 0.44 inches is smaller than the 0.5 inch thickness of the handle, so this strain gauge will fit on the torque wrench. 
