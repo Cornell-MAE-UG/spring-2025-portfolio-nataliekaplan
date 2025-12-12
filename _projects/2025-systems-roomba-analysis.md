@@ -10,7 +10,7 @@ image: /assets/images/roomba.jpg
 
 In a group of 4, I studied the localization and path following algorithms of a Roomba. We chose this because many of the group members are interested in robotics and a Roomba is a simple yet insightful example of robot control. We investigated the Kalman filter and the Extended Kalman filter, which are feedback control systems that use sensor data to continuously update the robot's believed pose. We will also investigate the Roomba’s path following control, including both its forward velocity and heading angle controller. Lastly, we will take a look at the control algorithm behind the spinning dust collection system. We studied the state space model, block diagrams, transfer functions, inputs and outputs, and feedback control law of each of these smaller controllers that make up the Roomba. 
 
-My contribution to this project focused on the KF and EKF. I studied the Kalman filter to better understand the EKF by creating a block diagram of the closed loop system. I also simulated the EKF in MATLAB to visualize its accuracy. The section I wrote is below. If you are interested in the full report, it can be downloaded in PDF form by clicking here. <WORK IN PROGRESS - IT WILL BE LINKED SOON>
+My contribution to this project focused on the KF and EKF. I studied the Kalman filter to better understand the EKF by creating a block diagram of the closed loop system. I also simulated the EKF in MATLAB to visualize its accuracy. The section I wrote is below. If you are interested in the full report, it can be downloaded in PDF form by clicking [here]({{ "/assets/MAE-3260-final-report.pdf" | relative_url }}).
 
 **Localization of a Roomba**
 
