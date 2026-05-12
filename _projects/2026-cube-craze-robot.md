@@ -150,9 +150,10 @@ The completed robot is shown below.
   <em>Figure 9: Completed robot on competition day. Ultrasonic sensor is visible on the side of the robot. </em>
 </p>
 
-I wrote the code for the competition, which is shown below. A full description of what it does is in the report section below. 
+I wrote the code for the competition, which you can see by expanding the section below. A full description of what it does is in the report section below. 
 
-<div style="max-height: 500px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; border-radius: 6px; background-color: #f8f8f8;">
+<details>
+<summary><strong>Click to view full C source code</strong></summary>
 
 ```c
   //----------- PIN ASSIGNMENTS ------------
@@ -491,7 +492,7 @@ I wrote the code for the competition, which is shown below. A full description o
   }
 ```
 
-</div>
+</details>
 
 Overall, our robot performed well. Our team placed second in our group of 8, advancing us to the tournament. Unfortunately, we lost our first round. 
 
@@ -500,6 +501,7 @@ Overall, our robot performed well. Our team placed second in our group of 8, adv
 The sections of the report that I wrote are below. If you are interested in the full report, it can be downloaded in PDF form by clicking [here]({{ "/assets/MAE-3260-final-report.pdf" | relative_url }}).
 
 *Robot Design and Strategy Overview*
+
 Our robot was built with an 8 inch by 8 inch laser cut square frame to utilize all of the space available in the initial bounding box. The robot had cardboard flaps attached to the frame that only opened in towards the robot in order to let cubes in from all directions but not out. The flaps were pushed open by the motionless cubes when the robot drove over them. The frame was built in 2 parts: the top frame, which was attached to the robot, and the square bottom frame, which held the flaps. The square frame was lower to reduce the risk of the flaps bending and letting cubes out. 
 
 The robot had 2 motors, one for each wheel. We used a color sensor to detect when we reached the center of the board, which was where the cubes were. The 2 QTI sensors were used to detect the black border. An ultrasonic sensor was used to detect the opposing robot. We decided to use the breadboard from one of our kits in order to help prevent loose connections and provide more space for wiring.
@@ -509,6 +511,7 @@ We implemented 5 driving functions, which made the robot drive forward, drive ba
 During competition, the robot would ideally drive forward until it detected the color border. It would collect the middle third of the cubes and then use the ultrasonic sensor to see if the opposing robot was on its right side. Then, it would turn based on the sensor input and collect another third of the cubes. After that, it would drive around the board for the rest of the round, protecting its cubes and avoiding the opposing robot. With two thirds of the cubes collected, our robot would have the majority and therefore would win. 
 
 *Competition Analysis*
+
 Overall, our robot performed well. Our team placed second in our group of 8, advancing us to the tournament. Unfortunately, we lost our first round. 
 
 The flaps did a good job holding the cubes in and not letting them out. Also, the robot’s path worked very well and the robot consistently collected a lot of cubes. However, we consistently had issues with loose connections, particularly the QTI wires. Also, the ultrasonic sensor was ultimately not used at all because the opposing robot had to be positioned almost exactly to the right of our robot and at the right time in order to be sensed. Another issue we faced is that the 8 inch by 8 inch initial bounding box was smaller than expected and the robot chassis took up a large portion of it. This caused cubes to get stuck in the wheels. 
