@@ -106,7 +106,7 @@ After replacing the QTI sensor, the milestone went smoothly and my team was able
 
 **Milestone 4: Cube Clearing**
 
-At the beginning of the milestone, there were 10 cubes on each side of the board, randomly scattered within the middle third of the field. The objective of the mielstone was to make our robot gather at least 5 cubes within one minute.
+At the beginning of the milestone, there were 10 cubes on each side of the board, randomly scattered within the middle third of the field. The objective of the milestone was to make our robot gather at least 5 cubes within one minute.
 
 At this point, a couple changes were made to our design from the design pitch. Since the initial bounding area was a square, we changed the frame to be a square to utilize all of the space we were given. Also, we changed the frame so that it hung down to reduce the length of the flaps and therefore reduce the risk that they would bend and let cubes out. 
 
@@ -154,7 +154,7 @@ I wrote the code for the competition, which you can see by expanding the section
 
 <div style="max-height: 500px; overflow-y: auto; margin-top: 10px;">
 
-<pre style="background-color: #1e252b; padding: 15px; border-radius: 8px; border: 1px solid #ccc;"><code class="language-c">
+<pre style="background-color: #1e252b; color: #d7e1e8; padding: 15px; border-radius: 8px; border: 1px solid #ccc;"><code class="language-c">
   //----------- PIN ASSIGNMENTS ------------
   // 2: Color sensor output
   // 4: Right QTI sensor
@@ -497,7 +497,7 @@ Overall, our robot performed well. Our team placed second in our group of 8, adv
 
 **Report**
 
-The sections of the report that I wrote are below. If you are interested in the full report, it can be downloaded in PDF form by clicking [here]({{ "/assets/MAE-3260-final-report.pdf" | relative_url }}).
+The sections of the report that I wrote are below. If you are interested in the full report, it can be downloaded in PDF form by clicking [here]({{ "/assets/cube-craze-final-report.pdf" | relative_url }}).
 
 *Robot Design and Strategy Overview*
 

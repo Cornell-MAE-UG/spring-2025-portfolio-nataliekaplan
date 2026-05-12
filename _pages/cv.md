@@ -19,7 +19,7 @@ Mechanical engineering student with a strong foundation in prototyping, dynamics
 
 #### Education
 - **Cornell University**  
-  *Bachelor of Science in Mechanical and Aerospace Engineering | Minor in Robotics*  
+  *Bachelor of Science in Mechanical and Aerospace Engineering*  
   GPA: 3.9/4.0 | Graduation: May, 2027 
 
 - **Syosset High School**  
@@ -30,8 +30,8 @@ Mechanical engineering student with a strong foundation in prototyping, dynamics
 
 #### Skills
 - **Software:** Autodesk Fusion, SolidWorks, Ansys Mechanical, Simulink
-- **Programming:** MATLAB, Python, Java, C++, HTML, CSS, Javascript
-- **Tools:** 3D Printing, Lathe, Mill, Drill Press, Band Saw, Sander
+- **Programming:** MATLAB, Python, Java, C, C++, HTML, CSS, Javascript
+- **Tools:** 3D Printing, Arduino, Lathe, Mill, Drill Press, Band Saw, Sander
 
 ---
 
