@@ -154,7 +154,7 @@ I wrote the code for the competition, which you can see by expanding the section
 
 <div style="max-height: 500px; overflow-y: auto; margin-top: 10px;">
 
-<pre><code class="language-c">
+<pre style="background-color: #1e252b; padding: 15px; border-radius: 8px; border: 1px solid #ccc;"><code class="language-c">
   //----------- PIN ASSIGNMENTS ------------
   // 2: Color sensor output
   // 4: Right QTI sensor
