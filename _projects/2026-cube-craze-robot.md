@@ -152,10 +152,9 @@ The completed robot is shown below.
 
 I wrote the code for the competition, which you can see by expanding the section below. A full description of what it does is in the report section below. 
 
-<details>
-<summary><strong>Click to view full C source code</strong></summary>
+<div style="max-height: 500px; overflow-y: auto; margin-top: 10px;">
 
-```c
+<pre><code class="language-c">
   //----------- PIN ASSIGNMENTS ------------
   // 2: Color sensor output
   // 4: Right QTI sensor
@@ -490,9 +489,9 @@ I wrote the code for the competition, which you can see by expanding the section
       avoid_border();
     }
   }
-```
+</code></pre>
 
-</details>
+</div>
 
 Overall, our robot performed well. Our team placed second in our group of 8, advancing us to the tournament. Unfortunately, we lost our first round. 
 
